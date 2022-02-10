@@ -1,0 +1,131 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body{
+  font-family: 'Ubuntu', sans-serif;
+}
+CSS variables
+:root{
+
+}
+
+/* navbar */
+
+.navbar {
+  display: flex;
+  align-items: center;
+
+  top: 0;
+
+  position: relative;
+}
+.navbar::before {
+  content: "";
+  background-color: black;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  opacity: 0;
+}
+.navbar-link {
+  display: flex;
+  margin-left: 17rem;
+}
+.navbar-link ul {
+  display: flex;
+}
+.navbar-link ul li {
+  list-style: none;
+  float: left;
+  font-size: 1.4em;
+}
+.navbar-link ul li a {
+  color: #685454;
+  display: block;
+  text-decoration: none;
+  padding: 15px 65px;
+  font-weight:bold;
+}
+.navbar-link ul li a:hover {
+  text-decoration: underline;
+}
+
+/* logo and image */
+
+.logo {
+  margin: 1.6rem 1.1rem;
+  padding: 1.1rem 1.1rem;
+  font-size: 1.6em;
+  font-weight:bold;
+}
+
+.logo a{
+  text-decoration: none;
+  color: #685454;
+}
+
+/* Sections of home  */
+#home {
+  display: flex;
+  flex-direction: column;
+  padding: 5em 6em;
+  height: 25rem;
+  justify-content: center;
+  align-items: center;
+}
+#home::before {
+  content: "";
+  position: absolute;
+  background: url("/images/image1.jpg") no-repeat center center/cover;
+  height: 100%;
+  width: 100%;
+  top: 0px;
+  left: 0px;
+  z-index: -1;
+  opacity: 0.89;
+}
+
+#home h1 {
+  font-size: 5em;
+}
+#home h4 {
+  font-size: 2em;
+}
+
+/* .section 1 */
+/* .section1 {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  height: 500px;
+  align-items: center;
+}
+.section1::before {
+  content: "";
+  position: absolute;
+  background: url("/images/image3.jpg") no-repeat center center/cover;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  opacity: 1;
+} */
+/* .section2 {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  align-items: center;
+}
+.section2::before {
+  content: "";
+  position: absolute;
+  background: url("/images/image2.jpg") no-repeat center center/cover;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  opacity: 1;
+}  */

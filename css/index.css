@@ -1,0 +1,112 @@
+
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "Ubuntu", sans-serif;
+}
+
+
+/* navbar */
+
+.navbar {
+  display: flex;
+  align-items: center;
+  top: 0;
+  position: relative;
+}
+.navbar::before {
+  content: "";
+  background-color: black;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  opacity: 0.5;
+}
+.navbar-link {
+  display: flex;
+  margin-left: 14rem;
+}
+.navbar-link ul {
+  display: flex;
+}
+.navbar-link ul li {
+  list-style: none;
+  float: left;
+  font-size: 1.4em;
+}
+.navbar-link ul li a {
+  color: #9f9da3;
+  display: block;
+  text-decoration: none;
+  padding: 15px 45px;
+  font-weight: bold;
+}
+.navbar-link ul li a:hover {
+  text-decoration: underline;
+}
+/* logo and image */
+.logo {
+  margin: 1.3rem 1.1rem;
+  padding: 1rem 1.1rem;
+  font-size: 1.8em;
+  font-weight: bolder;
+}
+
+.logo a {
+  text-decoration: none;
+  color: #adaab1;
+}
+
+/* Sections of home  */
+
+.twp-video-background {
+    background: #000;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    overflow: hidden;
+    box-sizing: border-box;
+    z-index: -2;
+}
+.twp-video-foreground,
+.twp-video-background video{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    box-sizing: border-box;
+    object-fit: cover;
+}
+
+.twp-video-foreground{
+    padding-bottom: 56.25%;
+    box-sizing: border-box;
+}
+
+.twp-video-layer {
+    position: absolute;
+    background-color: rgb(0, 0, 0);
+    width: 100%;
+    height: 100%;
+    opacity: 0.3;
+    box-sizing: border-box;
+}
+
+#soon{
+    display: flex;
+    font-size: 6em;
+    z-index: -1;
+    height: 850px;
+    align-items: center;
+    justify-content: center;
+    opacity: 0.79;
+}
